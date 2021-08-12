@@ -1,0 +1,77 @@
+$margin: 220px;
+
+%input {
+    padding: 4px;
+    padding-left: 10px;
+    font-size: 16px;
+        
+    max-width: 335px;
+    width: 335px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #999999;
+    transition: border .3s;
+
+    &:focus {
+        outline: none;
+        transition: border .3s;
+        border: 1px solid #71C838;
+    }
+
+    &.error{
+        border: 1px solid #FF0000;
+    }
+}
+
+.field{
+    label{
+        display: flex;
+        justify-content: flex-start;
+
+        font-family: Arial;
+        font-size: 21px;
+
+        div{
+            display: inline-block;
+            width: $margin
+        }
+
+        span{
+            color: red;
+        }
+
+        p{
+            margin: 0px;
+            font-size: 16px;
+            display: inline-block;
+        }
+    }
+
+    input{
+        @extend %input
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+    }
+
+    margin-bottom: 5px;
+
+}
+
+.errorBlock{
+    height: 25px;
+    margin-left: $margin;
+    color: #FF0000;
+}
+
+
+.select{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background: no-repeat right url(../../down.png);
+    background-size: 25px;
+    @extend %input;
+}

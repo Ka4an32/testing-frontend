@@ -1,0 +1,25 @@
+.hr{
+    height: 1px;
+    background-color: lightgray;
+    margin-bottom: 35px;
+}
+
+button{
+    margin-left: 220px;
+    background-color: #71C838;
+    border: 0px;
+    font-size: 18px;
+    color: white;
+    padding: 8px 15px;
+
+    &:hover{
+        background-color: #68a73e;
+    }
+}
+
+form>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #999999;
+}
